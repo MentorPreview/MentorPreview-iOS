@@ -13,6 +13,8 @@
 		3934831B1F8BC6EC00E016CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3934831A1F8BC6EC00E016CE /* Assets.xcassets */; };
 		3934831E1F8BC6EC00E016CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3934831C1F8BC6EC00E016CE /* LaunchScreen.storyboard */; };
 		3934832A1F8BC8E200E016CE /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393483291F8BC8E200E016CE /* StoryboardInstantiable.swift */; };
+		393483381F8BD5FF00E016CE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393483361F8BD5FF00E016CE /* Result.framework */; };
+		393483391F8BD5FF00E016CE /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393483371F8BD5FF00E016CE /* APIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3934831D1F8BC6EC00E016CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3934831F1F8BC6EC00E016CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		393483291F8BC8E200E016CE /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		393483361F8BD5FF00E016CE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		393483371F8BD5FF00E016CE /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				393483381F8BD5FF00E016CE /* Result.framework in Frameworks */,
+				393483391F8BD5FF00E016CE /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 			children = (
 				393483121F8BC6EC00E016CE /* MentorPreview */,
 				393483111F8BC6EC00E016CE /* Products */,
+				393483351F8BD5FF00E016CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +98,15 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		393483351F8BD5FF00E016CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				393483371F8BD5FF00E016CE /* APIKit.framework */,
+				393483361F8BD5FF00E016CE /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,6 +117,7 @@
 				3934830C1F8BC6EC00E016CE /* Sources */,
 				3934830D1F8BC6EC00E016CE /* Frameworks */,
 				3934830E1F8BC6EC00E016CE /* Resources */,
+				3934833A1F8BD60400E016CE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -157,6 +174,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3934833A1F8BD60400E016CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3934830C1F8BC6EC00E016CE /* Sources */ = {
@@ -304,6 +339,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SLHYE76MHB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MentorPreview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.shinoki.MentorPreview;
@@ -319,6 +358,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SLHYE76MHB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MentorPreview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.shinoki.MentorPreview;
