@@ -8,9 +8,23 @@
 
 import UIKit
 
+import ObjectMapper
+
 
 // MARK: - Mentor
 
-class Mentor: NSObject {
+class Mentor: Mappable {
 
+    var name: String = ""
+    var imageURLString: String = ""
+
+    required init?(map: Map) {
+
+    }
+
+    func mapping(map: Map) {
+
+        self.name <- map["name"]
+        self.imageURLString <- map["img_url"]
+    }
 }
