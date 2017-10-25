@@ -9,6 +9,7 @@
 import UIKit
 
 import Alamofire
+import SwiftyJSON
 
 // MARK: - API
 
@@ -56,13 +57,24 @@ enum API {
 
 class Network: NSObject {
 
-    static func request(target: API, completion: @escaping (DataResponse<Any>) -> Void) {
+    static func request(target: API, successHandler: @escaping (JSON) -> Void, errorHandler: @escaping (Error) -> Void) {
 
         let endpoint: URLConvertible = target.endpoint
 
         Alamofire.request(endpoint, method: target.method, parameters: target.parameters).responseJSON { response in
 
-            completion(response)
+            if let error = response.error {
+
+                errorHandler(error)
+                return
+            }
+
+            guard let data = response.data else {
+
+                return
+            }
+
+            successHandler(JSON(data))
         }
     }
 }
