@@ -28,7 +28,7 @@ enum API {
         switch self {
 
         case .mentors:
-            return "couese/mentors"
+            return "course/mentors"
         }
     }
 
@@ -38,7 +38,7 @@ enum API {
         switch self {
 
         case .mentors:
-            return ["identifier": ""]
+            return ["identifier": "iphone"]
         }
     }
 
