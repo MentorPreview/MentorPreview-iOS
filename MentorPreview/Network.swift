@@ -16,7 +16,7 @@ import SwiftyJSON
 enum API {
 
     // /course/mentors
-    case mentors
+    case courseMentors(course: CourseType)
 
     var endpoint: String {
 
@@ -27,7 +27,7 @@ enum API {
 
         switch self {
 
-        case .mentors:
+        case .courseMentors:
             return "course/mentors"
         }
     }
@@ -37,8 +37,8 @@ enum API {
 
         switch self {
 
-        case .mentors:
-            return ["identifier": "iphone"]
+        case .courseMentors(let course):
+            return ["identifier": course.rawValue]
         }
     }
 
@@ -46,10 +46,34 @@ enum API {
 
         switch self {
 
-        case .mentors:
+        case .courseMentors:
             return .post
         }
     }
+}
+
+
+// MARK: -
+
+enum CourseType: String {
+
+    case iphone = "iphone"
+    case android = "android"
+    case unity = "unity"
+    case webd = "webd"
+    case webs = "webs"
+    case movie = "movie"
+    case anime = "anime"
+    case design = "design"
+    case mediaart = "mediaart"
+    case game2d = "2d"
+    case minecraft = "minecraft"
+    case dtm = "dtm"
+    case maya = "maya"
+    case miku = "miku"
+    case line = "line"
+    case iot = "iot"
+    case camera = "camera"
 }
 
 

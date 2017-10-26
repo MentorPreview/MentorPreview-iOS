@@ -13,5 +13,5 @@ import UIKit
 
 class Service: NSObject {
 
-    static let mentors = MentorsService()
+    static let course = CourseServise()
 }
