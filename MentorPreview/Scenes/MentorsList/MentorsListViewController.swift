@@ -57,7 +57,7 @@ extension MentorsListViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cell: MentorsListCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MentorsListCollectionViewCell", for: indexPath) as! MentorsListCollectionViewCell
+        let cell: MentorsListCollectionViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.mentor = mentors[indexPath.item]
         return cell
     }

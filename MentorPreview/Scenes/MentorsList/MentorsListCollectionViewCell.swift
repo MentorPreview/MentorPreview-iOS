@@ -13,7 +13,7 @@ import Kingfisher
 
 // MARK: - MentorsListCollectionViewCell
 
-class MentorsListCollectionViewCell: UICollectionViewCell {
+class MentorsListCollectionViewCell: UICollectionViewCell, Reusable {
 
 
     // MARK: Internal
