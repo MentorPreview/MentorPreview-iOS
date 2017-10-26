@@ -53,7 +53,7 @@ enum API {
 }
 
 
-// MARK: -
+// MARK: - CourseType
 
 enum CourseType: String {
 
