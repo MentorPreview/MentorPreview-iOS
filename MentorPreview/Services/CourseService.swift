@@ -17,7 +17,7 @@ class CourseServise: NSObject {
 
     func post(course: CourseType) {
 
-        Network.request(target: .mentors(course: course), successHandler: { json in
+        Network.request(target: .courseMentors(course: course), successHandler: { json in
 
             let mentors: [Mentor] = Mapper<Mentor>().mapArray(JSONArray: json["response"]["mentors"].arrayValue.map({ $0.dictionaryObject! }))
             print(mentors)
