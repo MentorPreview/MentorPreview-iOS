@@ -16,3 +16,8 @@ Android client for mentor preview
 
 ## Coding Style
 - [eure/swift-style-guide](https://github.com/eure/swift-style-guide/blob/master/README_jp.md)
+
+create template command
+```
+make template
+```
