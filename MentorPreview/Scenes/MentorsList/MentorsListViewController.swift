@@ -78,8 +78,14 @@ extension MentorsListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
         let width: CGFloat = (collectionView.bounds.width - 10) / 2
-        let labelHeight: CGFloat = 19
+        let labelHeight: CGFloat = 26
         let height: CGFloat = width + labelHeight
         return CGSize(width: width, height: height)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+
+        let margin: CGFloat = 0
+        return UIEdgeInsetsMake(margin, margin, margin, margin)
     }
 }
