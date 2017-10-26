@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+# make custom templates
+
+echo "make custom templates"
+
+mkdir -p ~/Library/Developer/Xcode/Templates/File\ Templates/Eureka\ Coding\ Style
+cp -R Templates/Eureka\ Coding\ Style/Cocoa\ Touch\ Class.xctemplate ~/Library/Developer/Xcode/Templates/File\ Templates/Eureka\ Coding\ Style
+
+exit 0
