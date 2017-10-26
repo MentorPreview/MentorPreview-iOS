@@ -15,11 +15,11 @@ import ObjectMapper
 
 class MentorsService: NSObject {
 
-    func post() {
+    func post(completion: @escaping (_ mentos: [Mentor]) -> Void) {
         Network.request(target: .mentors, successHandler: { json in
 
             let mentors: [Mentor] = Mapper<Mentor>().mapArray(JSONArray: json["response"]["mentors"].arrayValue.map({ $0.dictionaryObject! }))
-
+            completion(mentors)
         }, errorHandler: { error in
 
         })
