@@ -21,6 +21,7 @@
 		3934831B1F8BC6EC00E016CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3934831A1F8BC6EC00E016CE /* Assets.xcassets */; };
 		3934831E1F8BC6EC00E016CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3934831C1F8BC6EC00E016CE /* LaunchScreen.storyboard */; };
 		3934832A1F8BC8E200E016CE /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393483291F8BC8E200E016CE /* StoryboardInstantiable.swift */; };
+		39F901E11FA249470002D92B /* MentorsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F901E01FA249470002D92B /* MentorsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		393483291F8BC8E200E016CE /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		393483361F8BD5FF00E016CE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		393483371F8BD5FF00E016CE /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		39F901E01FA249470002D92B /* MentorsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				39052F081FA11B8200201E4A /* CourseService.swift */,
 				39052F0B1FA11C9000201E4A /* Service.swift */,
+				39F901E01FA249470002D92B /* MentorsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				39052F091FA11B8200201E4A /* CourseService.swift in Sources */,
 				393483161F8BC6EC00E016CE /* ViewController.swift in Sources */,
 				39052EFC1FA1117C00201E4A /* Config.swift in Sources */,
+				39F901E11FA249470002D92B /* MentorsService.swift in Sources */,
 				3934832A1F8BC8E200E016CE /* StoryboardInstantiable.swift in Sources */,
 				393483141F8BC6EC00E016CE /* AppDelegate.swift in Sources */,
 			);
