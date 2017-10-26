@@ -15,7 +15,7 @@ import ObjectMapper
 
 class CourseServise: NSObject {
 
-    func get(course: CourseType) {
+    func post(course: CourseType) {
 
         Network.request(target: .mentors(course: course), successHandler: { json in
 
