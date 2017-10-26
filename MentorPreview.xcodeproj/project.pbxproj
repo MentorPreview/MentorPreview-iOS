@@ -23,6 +23,7 @@
 		3934832A1F8BC8E200E016CE /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393483291F8BC8E200E016CE /* StoryboardInstantiable.swift */; };
 		3940412D1FA24C4C002AE0D2 /* MentorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3940412C1FA24C4C002AE0D2 /* MentorsViewController.swift */; };
 		3940412F1FA24C56002AE0D2 /* MentorsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3940412E1FA24C56002AE0D2 /* MentorsViewController.storyboard */; };
+		394041321FA24E8D002AE0D2 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394041311FA24E8D002AE0D2 /* Kingfisher.framework */; };
 		39F901E11FA249470002D92B /* MentorsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F901E01FA249470002D92B /* MentorsService.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		393483371F8BD5FF00E016CE /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		3940412C1FA24C4C002AE0D2 /* MentorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorsViewController.swift; sourceTree = "<group>"; };
 		3940412E1FA24C56002AE0D2 /* MentorsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MentorsViewController.storyboard; sourceTree = "<group>"; };
+		394041311FA24E8D002AE0D2 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		39F901E01FA249470002D92B /* MentorsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394041321FA24E8D002AE0D2 /* Kingfisher.framework in Frameworks */,
 				39052F071FA11A1600201E4A /* SwiftyJSON.framework in Frameworks */,
 				39052F051FA1197100201E4A /* ObjectMapper.framework in Frameworks */,
 				39052F001FA1139E00201E4A /* Alamofire.framework in Frameworks */,
@@ -145,6 +148,7 @@
 		393483351F8BD5FF00E016CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				394041311FA24E8D002AE0D2 /* Kingfisher.framework */,
 				39052F061FA11A1600201E4A /* SwiftyJSON.framework */,
 				39052F041FA1197100201E4A /* ObjectMapper.framework */,
 				39052EFF1FA1139E00201E4A /* Alamofire.framework */,
@@ -242,6 +246,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			outputPaths = (
 			);
