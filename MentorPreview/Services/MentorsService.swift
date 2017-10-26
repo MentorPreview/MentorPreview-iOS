@@ -8,9 +8,20 @@
 
 import UIKit
 
+import ObjectMapper
+
+
+// MARK: - MentorsService
+
 class MentorsService: NSObject {
 
     func post() {
-        
+        Network.request(target: .mentors, successHandler: { json in
+
+            let mentors: [Mentor] = Mapper<Mentor>().mapArray(JSONArray: json["response"]["mentors"].arrayValue.map({ $0.dictionaryObject! }))
+
+        }, errorHandler: { error in
+
+        })
     }
 }

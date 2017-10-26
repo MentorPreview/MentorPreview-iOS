@@ -71,8 +71,8 @@
 		39052F0A1FA11B8600201E4A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				39052F081FA11B8200201E4A /* CourseService.swift */,
 				39052F0B1FA11C9000201E4A /* Service.swift */,
+				39052F081FA11B8200201E4A /* CourseService.swift */,
 				39F901E01FA249470002D92B /* MentorsService.swift */,
 			);
 			path = Services;
