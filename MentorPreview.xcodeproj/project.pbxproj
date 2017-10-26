@@ -26,6 +26,10 @@
 		394041321FA24E8D002AE0D2 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394041311FA24E8D002AE0D2 /* Kingfisher.framework */; };
 		394041341FA24FE1002AE0D2 /* MentorsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394041331FA24FE1002AE0D2 /* MentorsListCollectionViewCell.swift */; };
 		394041361FA25098002AE0D2 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394041351FA25098002AE0D2 /* UIImageViewExtension.swift */; };
+		394041381FA25670002AE0D2 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394041371FA25670002AE0D2 /* Reusable.swift */; };
+		3940413A1FA256CC002AE0D2 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394041391FA256CC002AE0D2 /* UICollectionViewExtension.swift */; };
+		3940413C1FA256EC002AE0D2 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3940413B1FA256EC002AE0D2 /* UITableViewExtension.swift */; };
+		3940413E1FA25707002AE0D2 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3940413D1FA25707002AE0D2 /* NibLoadable.swift */; };
 		39F901E11FA249470002D92B /* MentorsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F901E01FA249470002D92B /* MentorsService.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,10 @@
 		394041311FA24E8D002AE0D2 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		394041331FA24FE1002AE0D2 /* MentorsListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorsListCollectionViewCell.swift; sourceTree = "<group>"; };
 		394041351FA25098002AE0D2 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		394041371FA25670002AE0D2 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		394041391FA256CC002AE0D2 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		3940413B1FA256EC002AE0D2 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		3940413D1FA25707002AE0D2 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		39F901E01FA249470002D92B /* MentorsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				394041351FA25098002AE0D2 /* UIImageViewExtension.swift */,
+				394041391FA256CC002AE0D2 /* UICollectionViewExtension.swift */,
+				3940413B1FA256EC002AE0D2 /* UITableViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -138,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				393483291F8BC8E200E016CE /* StoryboardInstantiable.swift */,
+				394041371FA25670002AE0D2 /* Reusable.swift */,
+				3940413D1FA25707002AE0D2 /* NibLoadable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -269,10 +281,14 @@
 			files = (
 				39052F021FA116C000201E4A /* Mentor.swift in Sources */,
 				39052F0C1FA11C9000201E4A /* Service.swift in Sources */,
+				3940413A1FA256CC002AE0D2 /* UICollectionViewExtension.swift in Sources */,
 				394041361FA25098002AE0D2 /* UIImageViewExtension.swift in Sources */,
 				39052EFE1FA111E700201E4A /* Network.swift in Sources */,
 				3940412D1FA24C4C002AE0D2 /* MentorsListViewController.swift in Sources */,
+				3940413C1FA256EC002AE0D2 /* UITableViewExtension.swift in Sources */,
 				39052F091FA11B8200201E4A /* CourseService.swift in Sources */,
+				394041381FA25670002AE0D2 /* Reusable.swift in Sources */,
+				3940413E1FA25707002AE0D2 /* NibLoadable.swift in Sources */,
 				394041341FA24FE1002AE0D2 /* MentorsListCollectionViewCell.swift in Sources */,
 				393483161F8BC6EC00E016CE /* ViewController.swift in Sources */,
 				39052EFC1FA1117C00201E4A /* Config.swift in Sources */,
