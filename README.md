@@ -1,6 +1,6 @@
 ## MentorPreview-iOS
 
-Android client for mentor preview
+iOS client for mentor preview
 
 ## Libraries
 - [Alamofire](https://github.com/Alamofire/Alamofire)
