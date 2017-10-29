@@ -15,7 +15,7 @@ import ObjectMapper
 
 final class Camp: Mappable {
 
-    var campus: String = ""
+    var campus: Campus?
     var endDateString: String = ""
     var name: String = ""
     var startDateString: String = ""
