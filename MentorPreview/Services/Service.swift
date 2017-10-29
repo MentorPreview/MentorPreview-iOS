@@ -15,4 +15,5 @@ class Service: NSObject {
 
     static let course = CourseServise()
     static let mentors = MentorsService()
+    static let camps = CampsService()
 }

@@ -21,6 +21,9 @@ enum API {
     // /mentors
     case mentors
 
+    // /camps
+    case camps
+
     var endpoint: String {
 
         return Config.baseURL + path
@@ -35,6 +38,9 @@ enum API {
 
         case .mentors:
             return "/mentors"
+
+        case .camps:
+            return "/camps"
         }
     }
 
@@ -46,7 +52,7 @@ enum API {
         case .courseMentors(let course):
             return ["identifier": course.rawValue]
 
-        case .mentors:
+        case .mentors, .camps:
             return nil
         }
     }
@@ -55,7 +61,7 @@ enum API {
 
         switch self {
 
-        case .courseMentors, .mentors:
+        case .courseMentors, .mentors, .camps:
             return .post
         }
     }
