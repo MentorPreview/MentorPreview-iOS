@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - Config
 
-class Config: NSObject {
+final class Config: NSObject {
 
     static var baseURL: String = "https://mentor-preview.herokuapp.com/"
 

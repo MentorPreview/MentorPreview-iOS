@@ -94,7 +94,7 @@ enum CourseType: String {
 
 // MARK: - Network
 
-class Network: NSObject {
+final class Network: NSObject {
 
     static func request(target: API, successHandler: @escaping (JSON) -> Void, errorHandler: @escaping (Error) -> Void) {
 

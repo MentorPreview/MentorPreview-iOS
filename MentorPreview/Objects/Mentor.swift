@@ -13,7 +13,7 @@ import ObjectMapper
 
 // MARK: - Mentor
 
-class Mentor: Mappable {
+final class Mentor: Mappable {
 
     var name: String = ""
     var imageURLString: String = ""

@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - Service
 
-class Service: NSObject {
+final class Service: NSObject {
 
     static let course = CourseServise()
     static let mentors = MentorsService()

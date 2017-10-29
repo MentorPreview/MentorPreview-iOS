@@ -13,7 +13,7 @@ import ObjectMapper
 
 // MARK: - MentorsService
 
-class MentorsService: NSObject {
+final class MentorsService: NSObject {
 
     func post(completion: @escaping (_ mentors: [Mentor]) -> Void) {
         Network.request(target: .mentors, successHandler: { json in

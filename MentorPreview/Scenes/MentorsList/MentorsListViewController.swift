@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - MentorsListViewController
 
-class MentorsListViewController: UIViewController, StoryboardInstantiable {
+final class MentorsListViewController: UIViewController, StoryboardInstantiable {
 
 
     // MARK: Internal

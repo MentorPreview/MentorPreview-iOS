@@ -13,7 +13,7 @@ import ObjectMapper
 
 // MARK: - CourseServise
 
-class CourseServise: NSObject {
+final class CourseServise: NSObject {
 
     func post(course: CourseType) {
 

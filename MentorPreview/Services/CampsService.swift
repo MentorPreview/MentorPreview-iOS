@@ -13,7 +13,7 @@ import ObjectMapper
 
 // MARK: - CampsService
 
-class CampsService: NSObject {
+final class CampsService: NSObject {
 
     func post(completion: @escaping (_ camps: [Camp]) -> Void) {
 

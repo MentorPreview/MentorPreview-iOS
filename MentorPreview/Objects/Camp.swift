@@ -13,7 +13,7 @@ import ObjectMapper
 
 // MARK: - Camp
 
-class Camp: Mappable {
+final class Camp: Mappable {
 
     var campus: String = ""
     var endDateString: String = ""
